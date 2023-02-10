@@ -1,3 +1,5 @@
+// https://github.com/dlvdls18/DLEditor
+
 class DLEditor {
   static VERSION = 1;
   static DefinedModules = {};
