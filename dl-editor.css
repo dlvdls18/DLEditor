@@ -1,0 +1,151 @@
+:root {
+  --dl-bgcolor: #434343;
+  --dl-lines-bgcolor: #484848;
+  --dl-caret-color: #D3D3D3;
+  --dl-font-size: 14px;
+  --dl-selection-color: rgba(255, 255, 255, 0.2);
+  --dl-default-textcolor: #B0B0B0;
+  --dl-lines-textcolor: #B5B5B5;
+  --dl-font-family: monospace;
+  --dl-line-highlight-color: gray;
+  --dl-font-size-half: 7px;
+  --dl-tab-bgcolor: #575757;
+  --dl-tab-color: white;
+  --dl-tabquery-badge-bgcolor: #7C7C7C;
+  --dl-tabquery-badge-color: #575757;
+  --dl-tabquery-highlight-color: #5F853D;
+  --dl-tabquery-info-color: #919191;
+}
+
+.dl-editor {
+  background-color: var(--dl-bgcolor);
+  position: relative;
+  display: flex;
+}
+
+.dl-input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 0;
+  color: transparent;
+  caret-color: var(--dl-caret-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  padding: 8px;
+  line-height: 1rem;
+  font-size: var(--dl-font-size);
+  resize: none;
+  font-family: var(--dl-font-family);
+}
+
+.dl-input::selection {
+  color: transparent;
+  background-color: var(--dl-selection-color);
+  z-index: 2;
+}
+
+.dl-pre {
+  padding: 8px;
+  font-family: var(--dl-font-family);
+  white-space: nowrap;
+  overflow: scroll;
+  line-height: 1rem;
+  font-size: var(--dl-font-size);
+  color: var(--dl-default-textcolor);
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  z-index: 1;
+}
+
+.dl-lines {
+  padding: 8px;
+  font-family: var(--dl-font-family);
+  line-height: 1rem;
+  font-size: var(--dl-font-size);
+  background-color: var(--dl-lines-bgcolor);
+  overflow: scroll;
+  color: var(--dl-lines-textcolor);
+  pointer-events: none;
+  text-align: right;
+}
+
+.dl-lines::-webkit-scrollbar {
+  display: none;
+}
+
+.dl-wrapper {
+  flex: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: scroll;
+}
+
+.dl-line-highlight {
+  width: 100%;
+  height: 0;
+  padding-top: var(--dl-font-size-half);
+  padding-bottom: var(--dl-font-size-half);
+  background-color: var(--dl-line-highlight-color);
+  position: absolute;
+  top: 8px;
+  left: 0;
+  opacity: 0.2;
+}
+
+.dl-tab {
+  position: absolute;
+  top: 25px;
+  left: calc(28px + 3%);
+  background-color: var(--dl-tab-bgcolor);
+  border-radius: 3px;
+  color: var(--dl-tab-color);
+  font-family: var(--dl-font-family);
+  z-index: 3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 78px;
+  width: 80%;
+}
+
+.dl-tab-item {
+  list-style-type: none;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.dl-query-badge {
+  background-color: var(--dl-tabquery-badge-bgcolor);
+  color: var(--dl-tabquery-badge-color);
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.dl-tab-query-highlight {
+  color: var(--dl-tabquery-highlight-color);
+}
+
+.dl-tab-info {
+  text-align: center;
+  display: none;
+  color: var(--dl-tabquery-info-color);
+  margin-top: 3px;
+}
+
+.dl-defsh-spec {
+  color: gray;
+  opacity: 0.5;
+}
+
+.dl-defsh-num {
+  color: white;
+}
