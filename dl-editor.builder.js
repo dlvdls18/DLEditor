@@ -1,3 +1,5 @@
+// https://github.com/dlvdls18/DLEditor
+
 DLEditor._pushBuilder("SyntaxHighlighterBuilder", class {
   constructor(name) {
     this.name = name;
