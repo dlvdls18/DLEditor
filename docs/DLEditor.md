@@ -72,6 +72,24 @@ editor.isReadOnly();
 // Boolean
 ```
 
+## [Listen to an event](Events.md)
+```js
+editor.addEventListener(/* Number : event type, Function */);
+// undefined
+```
+
+## [Save an instance](Instance.md)
+```js
+editor.saveInstance(/* String : name of instance */);
+// undefined
+```
+
+## [Restore an instance](Instance.md)
+```js
+editor.restoreInstance(/* String : name of instance */);
+// undefined
+```
+
 # Module
 ## Apply theme to the editor
 ```js
