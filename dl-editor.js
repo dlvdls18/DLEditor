@@ -466,11 +466,11 @@ class DLEditor {
     if(this.isDestroyed == true) throw new Error("Instance is destroyed, cannot perform this action");
     return this.syntaxHighlighter.toString();
   }
-  getKeybindings() {
+  getKeybinding() {
     if(this.isDestroyed == true) throw new Error("Instance is destroyed, cannot perform this action");
     return this.keybindings.toString();
   }
-  getSnippets() {
+  getSnippet() {
     if(this.isDestroyed == true) throw new Error("Instance is destroyed, cannot perform this action");
     return this.snippets.toString();
   }
