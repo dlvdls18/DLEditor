@@ -4,6 +4,11 @@ Lightweight, minimal, responsive and mobile-friendly editor for Vanilla JavaScri
 
 ![DLEditor](img/editor.jpg)
 
+| Responsive | Multiple editor support |
+|:----------:|:-----------------------:|
+| Any valid size is supported | You can create an editor multiple times |
+| ![Responsize](img/size-responsive.jpg) | ![Multiple editor](img/multi-editor.jpg) |
+
 ```html
 <link ref="stylesheet" href="dl-editor.css">
 <style>
@@ -36,7 +41,9 @@ Lightweight, minimal, responsive and mobile-friendly editor for Vanilla JavaScri
 
 # Links
 
-
+- [DLEditor](docs/DLEditor.md)
+- [DLEditor's Events](docs/Event.md)
+- [DLEditor's Instance](docs/Instance.md)
 
 # Please Read
 This editor is not recommended for heavy usage.
