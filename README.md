@@ -41,7 +41,7 @@ Lightweight, minimal, responsive and mobile-friendly editor for Vanilla JavaScri
 
 # Links
 
-- [DLEditor](docs/DLEditor.md)
+- [DLEditor methods](docs/DLEditor.md)
 - [DLEditor's Events](docs/Event.md)
 - [DLEditor's Instance](docs/Instance.md)
 
