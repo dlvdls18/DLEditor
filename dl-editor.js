@@ -159,14 +159,14 @@ class DLEditor {
     this._elemLineHighlight.style.top = (this._lineHighlightOffset - this._elemInput.scrollTop) + "px";
     var inputY = this._elemInput.getBoundingClientRect().y + this._elemInput.getBoundingClientRect().height;
     var lineY = this._elemLineHighlight.getBoundingClientRect().y + this._elemLineHighlight.getBoundingClientRect().height;
-    this._triggerEventHandler.call(this, DLEditor.EVENT_ON_LINE_HIGHLIGHTED, {
-      line,
-      value: this._lineHighlightOffset - this._elemInput.scrollTop
-    });
     if(inputY <= lineY) {
       this.hideLineHighlight.call(this);
     } else {
       this.showLineHighlight.call(this);
+      this._triggerEventHandler.call(this, DLEditor.EVENT_ON_LINE_HIGHLIGHTED, {
+        line,
+        value: this._lineHighlightOffset - this._elemInput.scrollTop
+      });
     }
   }
   _frameUpdate() {
