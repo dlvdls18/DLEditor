@@ -15,7 +15,7 @@ class DLEditor {
   static $EVENT_ON_TAB_VISIBLE = 6;
   static $EVENT_ON_TAB_HIDDEN = 7;
   static $EVENT_ON_TOKEN_REFRESHED = 8;
-  static $EVENT_ON_TOKEN_HIGHLIGHTED = 9;
+  static $EVENT_ON_LINE_HIGHLIGHTED = 9;
   static $EVENT_ON_TAB_REPOSITONED = 10;
   static $EVENT_ON_DESTROY = 11;
   static $EVENT_ON_LINE_HIGHLIGHTED = 12;
