@@ -12,7 +12,7 @@ editor.applySyntaxHighlighter("default");
 
 # Building your syntax highlighter module
 ```js
-// Note: read the article 
+// Note: read the article https://github.com/dlvdls18/DLEditor/docs/Modules.md#use-dleditordefinedmodules-to-define-your-module
 var myModule = new DLEditor.SyntaxHighlighterBuilder(/* String : module name */);
 ```
 
@@ -128,4 +128,4 @@ If i write this to the editor:
 It's not actually displaying but to execute it since the `pre` in your editor is using `innerHTML` and not `innerText` so coloring texts is possible.
 
 ## Exporting your module
-Take a look at [Exporting Modules](#) for more information.
+Take a look at [Exporting Modules](Modules.md#important-exporting-your-module) for more information.
