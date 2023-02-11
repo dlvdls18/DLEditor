@@ -11,7 +11,7 @@ All modules are in `DLEditor.DLEditorModules`.
   - Uses to add actions to keyboard key shortcuts.
 - [Theme](Theme.md)
   - Uses to decorate your editor.
-    Take note that Theme and Syntax Highlighter is not same thing. Learn more at [Difference between Theme and Syntax Highlighter]()
+    Take note that Theme and Syntax Highlighter is not same thing. Learn more at [Difference between Theme and Syntax Highlighter](#difference-between-theme-and-syntax-highlighter)
 
 # Building module tips
 
