@@ -29,7 +29,7 @@ window.MyDLEditorModuleSyntaxHighlighter = ...
 DLEditor.DefinedModules.MySyntaxHighlighter = ...
 ```
 
-## **IMPORTANT:** Exporting your module
+## `IMPORTANT` Exporting your module
 Every constructed modules will not be available when applying it unless you export it.
 
 ```js
