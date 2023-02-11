@@ -90,7 +90,7 @@ editor.restoreInstance(/* String : name of instance */);
 // undefined
 ```
 
-# Module
+# [Module](Module.md)
 ## Apply theme to the editor
 ```js
 editor.applyTheme(/* String : Name of the module */);
