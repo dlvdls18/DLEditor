@@ -9,7 +9,6 @@ var editor = new DLEditor(/* HTMLElement */);
 ## Set the editor value
 ```js
 editor.setValue(/* String */);
-// undefined 
 ```
 
 ## Get the editor value
@@ -39,31 +38,26 @@ editor.getSelectionColumn();
 ## Show the line highlight
 ```js
 editor.showLineHighlight();
-// undefined
 ```
 
 ## Hide the line highlight
 ```js
 editor.hideLineHighlight();
-// undefined
 ```
 
 ## Hide the tab
 ```js
 editor.hideTab();
-// undefined
 ```
 
 ## Destroy the instance
 ```js
 editor.destroy();
-// undefined
 ```
 
 ## Set read only
 ```js
 editor.setReadOnly(/* Boolean */);
-// undefined
 ```
 
 ## Get is editor read only
@@ -75,19 +69,16 @@ editor.isReadOnly();
 ## [Listen to an event](Events.md)
 ```js
 editor.addEventListener(/* Number : event type, Function */);
-// undefined
 ```
 
 ## [Save an instance](Instance.md)
 ```js
 editor.saveInstance(/* String : name of instance */);
-// undefined
 ```
 
 ## [Restore an instance](Instance.md)
 ```js
 editor.restoreInstance(/* String : name of instance */);
-// undefined
 ```
 
 # [Modules](Modules.md)
