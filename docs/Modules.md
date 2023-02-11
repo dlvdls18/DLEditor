@@ -13,6 +13,28 @@ All modules are in `DLEditor.DLEditorModules`.
   - Uses to decorate your editor.
     Take note that Theme and Syntax Highlighter is not same thing. Learn more at [Difference between Theme and Syntax Highlighter](#difference-between-theme-and-syntax-highlighter)
 
+# Default modules
+When adding builder script to your project, `default` modules will be available.
+Take note that default modules are only syntax highlighter and snippets
+
+## Syntax Highlighter
+
+```js
+editor.applySyntaxHighlighter("default");
+```
+
+This is a small syntax highlighter module, it only colors invisible characters and numbers.
+Numbers are colored white and hidden characters (`\0`, `\n`, `\t`, `\s`) are colored dark gray.
+
+## Snippets
+
+```js
+editor.applySnippet("default");
+```
+
+This is a very small snippets module.
+It's just the lorem dummy text.
+
 # Building module tips
 
 ## Use `DLEditor.DefinedModules` to define your module
