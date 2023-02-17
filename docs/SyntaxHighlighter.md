@@ -126,6 +126,3 @@ If i write this to the editor:
 ```
 
 It's not actually displaying but to execute it since the `pre` in your editor is using `innerHTML` and not `innerText` so coloring texts is possible.
-
-## Exporting your module
-Take a look at [Exporting Modules](Modules.md#important-exporting-your-module) for more information.
