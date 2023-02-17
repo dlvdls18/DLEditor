@@ -6,7 +6,7 @@ Lightweight, minimal, responsive and mobile-friendly editor for Vanilla JavaScri
 
 | Responsive | Multiple editor support |
 |:----------:|:-----------------------:|
-| Any valid size is supported | You can create an editor multiple times |
+| Any valid size is supported | You can use DLEditor multiple times |
 | ![Responsize](img/size-responsive.jpg) | ![Multiple editor](img/multi-editor.jpg) |
 
 ```html
