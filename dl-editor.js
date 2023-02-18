@@ -323,7 +323,7 @@ class DLEditor {
     var bind = window.DLEditorModules[this.keybindings];
     if(bind == null) return;
     var ins = this;
-    bind.forEach(function(b) {
+    bind.keys.forEach(function(b) {
       if(b.entrance({
         key: evt.keyCode,
         alt: evt.altKey,
