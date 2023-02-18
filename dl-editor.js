@@ -1,7 +1,7 @@
 // https://github.com/dlvdls18/DLEditor
 
 class DLEditor {
-  static VERSION = 1;
+  static VERSION = 2;
   static DefinedModules = {};
   static _pushBuilder(name, builder) {
     DLEditor[name] = builder;
