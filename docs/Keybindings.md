@@ -7,13 +7,13 @@ Keybindings only triggers when the specific editor is being used.
 editor.applyKeybinding(/* String : name */);
 ```
 
-## Get the keybinding
+## Get the current keybinding
 ```js
 editor.getKeybinding();
 // String : name
 ```
 
-## Remove the keybinding
+## Remove the current keybinding
 ```js
 editor.removeKeybinding();
 ```
@@ -23,21 +23,34 @@ editor.removeKeybinding();
 new DLEditor.KeybindingsBuilder(/* String : name */);
 ```
 
-## Entrance
+## Add key
+
+```js
+myModule.addKey(/* Function : entrance, Function : handler */);
+```
+
+### Entrance
 Entrance is a function which is called when a keyboard shortcut is performed.
 It must return a boolean if the key press event satisfies the required keys.
 
 ```js
 // "a" + alt
-myModule.setEntrance(function(data) {
+myModule.addKey(function(data) {
  return data.isAlt && data.keyCode == 97;
+}, /* ... */);
+```
+
+### Handler
+When the entrance returns `true`, then the handler will be triggered.
+```js
+myModule.setHandler(/* ... */, function() {
+  // Do something...
 });
 ```
 
-## Handler
-When the entrance returns `true`, then the handler will be triggered.
+## Get all keys
+
 ```js
-myModule.setHandler(function() {
-  //...
-});
+myModule.getKeys();
+// Array String
 ```
