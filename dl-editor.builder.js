@@ -84,8 +84,7 @@ DLEditor._pushBuilder("SnippetBuilder", class {
 });
 
 DLEditor._pushBuilder("KeybindingsBuilder", class {
-  entrance = function() { return false }
-  handler = function() {}
+  keys = []
   constructor(name) {
     this.name = name;
   }
@@ -95,23 +94,11 @@ DLEditor._pushBuilder("KeybindingsBuilder", class {
   setName(name) {
     this.name = name;
   }
-  setEntrance(func) {
-    this.entrance = func;
+  addKey(entrance, handler) {
+    this.keys.push({ entrance, handler });
   }
-  getEntrance() {
-    return this.entrance;
-  }
-  setHandler(func) {
-    this.handler = func;
-  }
-  getHandler() {
-    return this.handler;
-  }
-  removeEntrance() {
-    this.entrance = function() { return false }
-  }
-  removeHandler() {
-    this.handler = function() {}
+  getKeys() {
+    return this.keys;
   }
   exportModule() {
     window.DLEditorModules.snippets[this.name] = this;
@@ -161,3 +148,5 @@ DLEditor.DefinedModules.DefaultSyntaxHighlighter.exportModule();
 DLEditor.DefinedModules.DefaultSnippet = new DLEditor.SnippetBuilder("default");
 DLEditor.DefinedModules.DefaultSnippet.addItem("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laboriosam, ullam maiores, voluptas dolorum erro, nam modi nisi expedita libero numquam sit voluptatem blanditiis ipsa quod illum nihil molestias accusantium.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "lorem");
 DLEditor.DefinedModules.DefaultSnippet.exportModule();
+
+DLEditor.BuilderVersion = 2;
