@@ -149,4 +149,4 @@ DLEditor.DefinedModules.DefaultSnippet = new DLEditor.SnippetBuilder("default");
 DLEditor.DefinedModules.DefaultSnippet.addItem("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laboriosam, ullam maiores, voluptas dolorum erro, nam modi nisi expedita libero numquam sit voluptatem blanditiis ipsa quod illum nihil molestias accusantium.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "lorem");
 DLEditor.DefinedModules.DefaultSnippet.exportModule();
 
-DLEditor.BuilderVersion = 2;
+DLEditor.BUILDER_VERSION = 2;
