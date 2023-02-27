@@ -33,10 +33,10 @@ Lightweight, minimal, responsive and mobile-friendly editor for Vanilla JavaScri
 
 # Installation
 ```html
-<link ref="stylesheet" href="https://cdn.jsdelivr.net/gh/dlvdls/DLEditor@main/dl-editor.css">
-<script src="https://cdn.jsdelivr.net/gh/dlvdls/DLEditor@main/dl-editor.js"></script>
+<link ref="stylesheet" href="https://cdn.jsdelivr.net/gh/dlvdls18/DLEditor@main/dl-editor.css">
+<script src="https://cdn.jsdelivr.net/gh/dlvdls18/DLEditor@main/dl-editor.js"></script>
 <!-- optional, for building modules (default syntax highlighter and snippets included) -->
-<script src="https://cdn.jsdelivr.net/gh/dlvdls/DLEditor@main/dl-editor.builder.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dlvdls18/DLEditor@main/dl-editor.builder.js"></script>
 ```
 
 # Links
